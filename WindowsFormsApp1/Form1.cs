@@ -15,15 +15,12 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             var jeanclaude = "jeanclaude";
-            WpfContainer.DisplayPopupWpfTest(jeanclaude);
+            WpfContainerUtils.DisplayPopupWpfTest(jeanclaude);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var uc = new UcWpfIntegration();
-            uc.Size = new Size(Width - 194, Height);
-            uc.Location = new Point(194, 0);
-            uc.DisplayIntegratedWpfUc(this, "jakituning");
+            WpfContainerUtils.DisplayIntegratedWpfUc(this, "jakifendlabise", Width - 194 -200, Height -100, 194,25);
         }
 
     }
